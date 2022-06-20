@@ -15,6 +15,8 @@
 
 ## Versões
 
+O Flexbox está relacionado com a criação de layouts responsíveis independentes de resolução. Assim o developer não precisa se preocupar em setar valores para as dimensões e posicionamento porque a adaptação é automática.
+
 Este curso está sendo feito pela plataforma DIO com o código feito no ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) com versionamento pelo ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 Todos os recursos online estão publicados no ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
