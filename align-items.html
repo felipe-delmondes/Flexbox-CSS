@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Items</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        h1{
+            text-transform: capitalize;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:large;
+        }
+
+        h2{
+            text-transform: capitalize;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:larger;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .base{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>Row</h2>
+    <h1>center</h1>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h1>stretch</h1>
+    <section class="container stretch">
+        <div class="item">It's worth noticing that the align items reffer to the alignment of the blocks not of their text itself!</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">No matter how much text, all the boxes are gonna follow and assume the same final size</div>
+    </section>
+
+    <h1>Flex-start</h1>
+    <section class="container start">
+        <div class="item">It's worth noticing that the align items reffer to the alignment of the blocks not of their text itself!</div>
+        <div class="item">Here the text tries to be as close as the top as possible!</div>
+        <div class="item">No matter how much text, all the boxes are gonna follow and assume the same final size</div>
+    </section>
+
+    <h1>Flex-end</h1>
+    <section class="container end">
+        <div class="item">It's worth noticing that the align items reffer to the alignment of the blocks not of their text itself!</div>
+        <div class="item">Here the text tries to be as close as the top as possible!</div>
+        <div class="item">No matter how much text, all the boxes are gonna follow and assume the same final size</div>
+    </section>
+
+    <h1>base-line</h1>
+    <section class="container base">
+        <div class="item">It's worth noticing that the align items reffer to the alignment of the blocks not of their text itself!</div>
+        <div class="item">Here the text tries to be as close as the top as possible!</div>
+        <div class="item">No matter how much text, all the boxes are gonna follow and assume the same final size</div>
+    </section>
+
+    <h2>Column</h2>
+
+    <h1>center</h1>
+    <section class="container center column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h1>Flex-start</h1>
+    <section class="container start column">
+        <div class="item">It's worth noticing that the align items reffer to the alignment of the blocks not of their text itself!</div>
+        <div class="item">Here the text tries to be as close as the top as possible!</div>
+        <div class="item">WandaVision</div>
+    </section>
+
+    <h1>Flex-end</h1>
+    <section class="container end column">
+        <div class="item">It's worth noticing that the align items reffer to the alignment of the blocks not of their text itself!</div>
+        <div class="item">Tony Stark</div>
+        <div class="item">No matter how much text, all the boxes are gonna follow and assume the same final size</div>
+    </section>
+</body>
+</html>
